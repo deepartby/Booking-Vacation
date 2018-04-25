@@ -1,31 +1,40 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from "@angular/router";
 
 import { AppComponent } from './app.component';
-import { IndexComponent } from './components/index/index.component';
-import { CreateComponent } from './components/create/create.component';
-import { EditComponent } from './components/edit/edit.component';
-import {appRoutes} from "./routerConfig";
-import {HttpClientModule} from "@angular/common/http";
-import {CoinService} from "./coin.service";
-import {ReactiveFormsModule} from "@angular/forms";
-
+import { routing } from "./routerConfig";
+import { HttpClientModule } from "@angular/common/http";
+import { UserService } from "./services/user.service";
+import { FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { RegisterComponent } from "./register/register.component";
+import { LoginComponent } from "./login/login.component";
+import { HomeComponent } from "./home/home.component";
+import { AlertComponent } from "./directives/alert.component";
+import { AlertService } from "./services/alert.service";
+import { AuthenticationService } from "./services/authentication.service";
+import { AuthGuard } from "./guards/auth.guards";
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
-    CreateComponent,
-    EditComponent
+    AlertComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
+    routing,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule
   ],
-  providers: [CoinService],
+  providers: [
+    UserService,
+    AlertService,
+    AuthenticationService,
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
