@@ -13,6 +13,9 @@ import { AlertComponent } from "./directives/alert.component";
 import { AlertService } from "./services/alert.service";
 import { AuthenticationService } from "./services/authentication.service";
 import { AuthGuard } from "./guards/auth.guards";
+import { CalendarComponent } from "./calendar/calendar.component";
+import { MonthComponent } from "./calendar/month/month.component";
+import { WeekComponent } from "./calendar/week/week.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { AuthGuard } from "./guards/auth.guards";
     AlertComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CalendarComponent,
+    MonthComponent,
+    WeekComponent
   ],
   imports: [
     BrowserModule,
