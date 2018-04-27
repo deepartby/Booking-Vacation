@@ -2,7 +2,7 @@ calendar
 <div class="calendar">
 
     <div class="col-xs-6 col-sm-4" *ngFor="let month of months;" >
-      <month [month]=month></month>
+      <month [month]=month [year]="year"></month>
     </div>
 
 </div>

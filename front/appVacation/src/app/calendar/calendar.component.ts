@@ -8,7 +8,9 @@ import {Component, OnInit} from "@angular/core";
 
 export class CalendarComponent implements OnInit {
 
-    months: any[] = new Array(12);
+    months: any[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    year: number = 2018;
+
     constructor() {
     }
 
