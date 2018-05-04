@@ -1,8 +1,16 @@
-calendar
 <div class="calendar">
 
-    <div class="col-xs-6 col-sm-4" *ngFor="let month of months;" >
-      <month [month]=month [year]="year"></month>
-    </div>
+    <div class="row" *ngFor="let season of seasons">
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="season * 3" [year]="year"></month>
+      </div>
 
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="season * 3 + 1" [year]="year"></month>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="season * 3 + 2" [year]="year"></month>
+      </div>
+    </div>
 </div>

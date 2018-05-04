@@ -1,22 +1,14 @@
-.one-day {
-  width: 14.2%;
-  background-color: black;
+.custom-color {
+    height: 5px;
+    background-color: red;
+    width: 50%;
 }
-.two-day {
-  width: 28.4%;
+
+.custom-color:last-child {
+    border-radius: 0 0 0 5px;
 }
-.three-day {
-  width: 42.8%;
+
+.custom-color:first-child {
+    border-radius: 5px 0 0 0;
 }
-.four-day {
-  width: 57.1%;
-}
-.five-day {
-  width: 71.4%;
-}
-.six-day {
-  width: 85.7%;
-}
-.sev-day {
-  width: 99.9%;
-}
+

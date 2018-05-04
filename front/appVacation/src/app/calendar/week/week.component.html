@@ -1,1 +1,6 @@
-<div></div>
+<div class="wrapper-vacation">
+  <div class="custom-color" *ngFor="let vacation of vacations"
+       [style.background-color]="colors[vacation - 1]"
+       [style.height]="20/vacations.length + 'px'">
+  </div>
+</div>
