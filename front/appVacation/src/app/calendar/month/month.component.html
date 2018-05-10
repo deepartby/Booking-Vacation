@@ -1,5 +1,5 @@
 <div class="month">
-  <div class="week-wr" *ngFor="let week of weeks" [style.width]="_getWidth(week)" [style.margin-left]="_getOffset(week)">
-    <week [week]=week [month]="month" [year]="year"></week>
+  <div  class="wrapper-week" *ngFor="let week of weeks">
+    <week class="week" [week]=week [month]="month" [year]="year" [vacations]="vacations"></week>
   </div>
 </div>

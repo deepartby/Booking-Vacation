@@ -1,5 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import * as moment from 'moment';
+import {Vacation} from "../models/vacation";
 
 @Component({
     moduleId: module.id,
@@ -10,9 +11,10 @@ import * as moment from 'moment';
 
 export class CalendarComponent implements OnInit {
 
-    seasons: any[] = [0, 1, 2, 3];
     year: number = 2018;
-
+    vacations: Vacation[] = [new Vacation(moment('2018-04-01'), moment('2018-05-11'), '#03436A'),
+                            new Vacation(moment('2018-05-01'), moment('2018-05-12'), '#7279D8'),
+                            new Vacation(moment('2018-04-01'), moment('2018-05-13'), '#4C57D8')];
     constructor() {
     }
 

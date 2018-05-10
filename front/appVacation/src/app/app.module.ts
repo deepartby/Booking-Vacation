@@ -16,7 +16,6 @@ import { AuthGuard } from "./guards/auth.guards";
 import { CalendarComponent } from "./calendar/calendar.component";
 import { MonthComponent } from "./calendar/month/month.component";
 import { WeekComponent } from "./calendar/week/week.component";
-import { MomentModule } from "ngx-moment";
 
 @NgModule({
   declarations: [
@@ -27,7 +26,7 @@ import { MomentModule } from "ngx-moment";
     RegisterComponent,
     CalendarComponent,
     MonthComponent,
-    WeekComponent
+    WeekComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +34,6 @@ import { MomentModule } from "ngx-moment";
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MomentModule
   ],
   providers: [
     UserService,

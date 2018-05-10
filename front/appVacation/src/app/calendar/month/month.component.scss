@@ -4,11 +4,13 @@
   border-radius: 10px;
   margin: 5px 0 5px 0;
   min-width: 150px;
-  .week-wr {
-    margin: 5px 5px 5px 5px;
-    background-color: #A1DCFF;
-    border: 2px solid #59C1FF;
-    border-radius: 8px;
-    min-height: 25px;
-  }
+  padding: 0 5px 0 5px;
+}
+
+.week {
+  display: flex;
+}
+
+.wrapper-week:last-child {
+  margin-bottom: 5px;
 }

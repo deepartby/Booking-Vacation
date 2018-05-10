@@ -1,16 +1,50 @@
 <div class="calendar">
 
-    <div class="row" *ngFor="let season of seasons">
+    <div class="row">
       <div class="col-xs-6 col-sm-4 month-wrap">
-        <month [month]="season * 3" [year]="year"></month>
+        <month [month]="0" [year]="year" [vacations]="vacations"></month>
       </div>
-
       <div class="col-xs-6 col-sm-4 month-wrap">
-        <month [month]="season * 3 + 1" [year]="year"></month>
+        <month [month]="1" [year]="year" [vacations]="vacations"></month>
       </div>
-
       <div class="col-xs-6 col-sm-4 month-wrap">
-        <month [month]="season * 3 + 2" [year]="year"></month>
+        <month [month]="2" [year]="year" [vacations]="vacations"></month>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="3" [year]="year" [vacations]="vacations"></month>
+      </div>
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="4" [year]="year" [vacations]="vacations"></month>
+      </div>
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="5" [year]="year" [vacations]="vacations"></month>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="6" [year]="year" [vacations]="vacations"></month>
+      </div>
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="7" [year]="year" [vacations]="vacations"></month>
+      </div>
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="8" [year]="year" [vacations]="vacations"></month>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="9" [year]="year" [vacations]="vacations"></month>
+      </div>
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="10" [year]="year" [vacations]="vacations"></month>
+      </div>
+      <div class="col-xs-6 col-sm-4 month-wrap">
+        <month [month]="11" [year]="year" [vacations]="vacations"></month>
       </div>
     </div>
 </div>

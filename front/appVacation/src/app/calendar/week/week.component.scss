@@ -1,14 +1,64 @@
-.custom-color {
-    height: 5px;
-    background-color: red;
-    width: 50%;
+.day {
+  margin-top: 5px;
+  background-color: #A1DCFF;
+  border-top: 2px solid #59C1FF;
+  border-bottom: 2px solid #59C1FF;
+  min-height: 25px;
+  width: 14.26%;
 }
 
-.custom-color:last-child {
-    border-radius: 0 0 0 5px;
+.day:first-child {
+  border-radius: 8px 0 0 8px;
+  border-left: 2px solid #59C1FF;
 }
 
-.custom-color:first-child {
-    border-radius: 5px 0 0 0;
+.day:last-child {
+  border-radius: 0 8px 8px 0;
+  border-right: 2px solid #59C1FF;
 }
+
+.day:only-child {
+  border-radius: 8px;
+}
+
+.day:first-child.first-week {
+  margin-left: auto;
+}
+
+.day:first-child .vacation:first-child {
+  border-radius: 7px 0 0 0;
+}
+
+.day:first-child .vacation:last-child {
+  border-radius: 0 0 0 7px;
+}
+
+.day:last-child .vacation:first-child {
+  border-radius: 0 7px 0 0;
+}
+
+.day:last-child .vacation:last-child {
+  border-radius: 0 0 7px 0;
+}
+
+.day:first-child .vacation:only-child {
+  border-radius: 7px 0 0 7px;
+}
+
+.day:last-child .vacation:only-child {
+  border-radius: 0 7px 7px 0;
+}
+
+.day:only-child .vacation:first-child {
+  border-radius: 7px 7px 0 0;
+}
+
+.day:only-child .vacation:last-child {
+  border-radius: 0 0 7px 7px;
+}
+
+.day:only-child .vacation:only-child {
+  border-radius: 8px;
+}
+
 
